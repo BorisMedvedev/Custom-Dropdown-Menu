@@ -68,6 +68,12 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown__input:hover {
+  background-color: #62baea;
+  color: #fff;
 }
 
 .dropdown .option {
