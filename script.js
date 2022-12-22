@@ -1,8 +1,10 @@
 function show(a) {
-  document.querySelector('.dropdown__input').value = a;
+  let div = document.querySelector(".box");
+  let res = (document.querySelector(".dropdown__input").value = a);
+  div.textContent = res;
+  return res;
 }
-
-const dropdown = document.querySelector('.dropdown');
+const dropdown = document.querySelector(".dropdown");
 dropdown.onclick = function () {
-  dropdown.classList.toggle('active');
-}
+  dropdown.classList.toggle("active");
+};
